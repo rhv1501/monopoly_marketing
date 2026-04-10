@@ -1,8 +1,7 @@
 "use client";
 
-import { useActionState } from "react";
-import { useFormStatus } from "react-dom";
-import { submitLead, type LeadFormState } from "@/app/actions/submitLead";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const BUSINESS_TYPES = [
   "School",
@@ -14,8 +13,31 @@ const BUSINESS_TYPES = [
   "Other",
 ];
 
-function SubmitButton() {
-  const { pending } = useFormStatus();
+type FormErrors = {
+  name?: string;
+  phone?: string;
+  email?: string;
+};
+
+const LEAD_GATE_COOKIE = "mm_lead_gate";
+const LEAD_GATE_MAX_AGE_SECONDS = 10 * 60;
+
+function validatePhone(phone: string): boolean {
+  return /^(\+91|91)?[6-9]\d{9}$/.test(phone.replace(/\s|-/g, ""));
+}
+
+function createLeadToken(): string {
+  if (
+    typeof crypto !== "undefined" &&
+    typeof crypto.randomUUID === "function"
+  ) {
+    return crypto.randomUUID();
+  }
+
+  return `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+}
+
+function SubmitButton({ pending }: { pending: boolean }) {
   return (
     <button
       type="submit"
@@ -71,10 +93,102 @@ function SubmitButton() {
 }
 
 export default function LeadForm() {
-  const [state, formAction] = useActionState<LeadFormState, FormData>(
-    submitLead,
-    null,
-  );
+  const router = useRouter();
+  const appsScriptUrl = process.env.NEXT_PUBLIC_APPS_SCRIPT_URL;
+  const [errors, setErrors] = useState<FormErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setSubmitError(null);
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    const name = String(formData.get("name") ?? "").trim();
+    const phone = String(formData.get("phone") ?? "").trim();
+    const email = String(formData.get("email") ?? "").trim();
+    const businessType = String(formData.get("businessType") ?? "").trim();
+    const requirement = String(formData.get("requirement") ?? "").trim();
+    const website = String(formData.get("website") ?? "").trim();
+
+    const nextErrors: FormErrors = {};
+    if (!name || name.length < 2) {
+      nextErrors.name = "Please enter your full name (min. 2 characters).";
+    }
+
+    if (!phone) {
+      nextErrors.phone = "Phone number is required.";
+    } else if (!validatePhone(phone)) {
+      nextErrors.phone = "Please enter a valid 10-digit Indian mobile number.";
+    }
+
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      nextErrors.email = "Please enter a valid email address.";
+    }
+
+    setErrors(nextErrors);
+    if (Object.keys(nextErrors).length > 0) {
+      return;
+    }
+
+    if (website) {
+      // Honeypot anti-spam field: bots that fill this are silently ignored.
+      return;
+    }
+
+    if (!appsScriptUrl) {
+      setSubmitError(
+        "Form integration is not configured yet. Please contact us on WhatsApp.",
+      );
+      return;
+    }
+
+    const payload = new URLSearchParams({
+      name,
+      phone,
+      email,
+      businessType,
+      requirement,
+      source: "website",
+      pageUrl: window.location.href,
+    }).toString();
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch(appsScriptUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+        },
+        body: payload,
+      });
+
+      if (!response.ok) {
+        throw new Error("Apps Script request failed");
+      }
+      const data = (await response.json()) as { ok?: boolean };
+      if (!data?.ok) {
+        throw new Error("Apps Script did not confirm success");
+      }
+    } catch {
+      setIsSubmitting(false);
+      setSubmitError(
+        "Could not submit right now. Please try again or message us on WhatsApp.",
+      );
+      return;
+    }
+
+    form.reset();
+
+    const leadToken = createLeadToken();
+    const isSecure = window.location.protocol === "https:";
+    document.cookie = `${LEAD_GATE_COOKIE}=${encodeURIComponent(leadToken)}; Max-Age=${LEAD_GATE_MAX_AGE_SECONDS}; Path=/; SameSite=Lax${isSecure ? "; Secure" : ""}`;
+
+    router.push(`/thank-you?lead=${encodeURIComponent(leadToken)}`);
+  }
 
   return (
     <section
@@ -124,7 +238,7 @@ export default function LeadForm() {
               ].map((item) => (
                 <li key={item.title} className="flex items-start gap-3">
                   <span
-                    className="text-2xl flex-shrink-0"
+                    className="text-2xl shrink-0"
                     role="img"
                     aria-hidden="true"
                   >
@@ -147,7 +261,7 @@ export default function LeadForm() {
               Fill in your details — we&apos;ll call you back!
             </h3>
 
-            <form action={formAction} className="space-y-5" noValidate>
+            <form onSubmit={handleSubmit} className="space-y-5" noValidate>
               {/* Name */}
               <div>
                 <label
@@ -163,11 +277,11 @@ export default function LeadForm() {
                   required
                   autoComplete="name"
                   placeholder="e.g. Priya Ramesh"
-                  className={`form-input ${state?.errors?.name ? "error" : ""}`}
+                  className={`form-input ${errors.name ? "error" : ""}`}
                 />
-                {state?.errors?.name && (
+                {errors.name && (
                   <p className="mt-1 text-red-400 text-xs" aria-live="polite">
-                    {state.errors.name[0]}
+                    {errors.name}
                   </p>
                 )}
               </div>
@@ -187,11 +301,11 @@ export default function LeadForm() {
                   required
                   autoComplete="tel"
                   placeholder="e.g. 98765 43210"
-                  className={`form-input ${state?.errors?.phone ? "error" : ""}`}
+                  className={`form-input ${errors.phone ? "error" : ""}`}
                 />
-                {state?.errors?.phone && (
+                {errors.phone && (
                   <p className="mt-1 text-red-400 text-xs" aria-live="polite">
-                    {state.errors.phone[0]}
+                    {errors.phone}
                   </p>
                 )}
               </div>
@@ -210,11 +324,11 @@ export default function LeadForm() {
                   name="email"
                   autoComplete="email"
                   placeholder="e.g. principal@myschool.com"
-                  className={`form-input ${state?.errors?.email ? "error" : ""}`}
+                  className={`form-input ${errors.email ? "error" : ""}`}
                 />
-                {state?.errors?.email && (
+                {errors.email && (
                   <p className="mt-1 text-red-400 text-xs" aria-live="polite">
-                    {state.errors.email[0]}
+                    {errors.email}
                   </p>
                 )}
               </div>
@@ -261,7 +375,25 @@ export default function LeadForm() {
                 />
               </div>
 
-              <SubmitButton />
+              <input
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                className="hidden"
+                aria-hidden="true"
+              />
+
+              {submitError && (
+                <p
+                  className="text-red-300 text-xs text-center"
+                  aria-live="polite"
+                >
+                  {submitError}
+                </p>
+              )}
+
+              <SubmitButton pending={isSubmitting} />
 
               <p className="text-blue-300 text-xs text-center">
                 🔒 Your details are secure and will never be shared.

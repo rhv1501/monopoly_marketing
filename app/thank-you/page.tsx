@@ -1,5 +1,15 @@
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 import Link from "next/link";
+
+type ThankYouPageProps = {
+  searchParams?: Promise<{
+    lead?: string;
+  }>;
+};
+
+const LEAD_GATE_COOKIE = "mm_lead_gate";
 
 export const metadata: Metadata = {
   title: "Thank You | Monopoly Marketing Chennai",
@@ -8,11 +18,22 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-export default function ThankYouPage() {
+export default async function ThankYouPage({
+  searchParams,
+}: ThankYouPageProps) {
+  const params = (await searchParams) ?? {};
+  const leadToken = params.lead?.trim();
+  const cookieStore = await cookies();
+  const gateCookie = cookieStore.get(LEAD_GATE_COOKIE)?.value;
+
+  if (!leadToken || !gateCookie || gateCookie !== leadToken) {
+    redirect("/");
+  }
+
   const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "919876543210";
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 flex flex-col items-center justify-center px-4 py-20">
+    <main className="min-h-screen bg-linear-to-br from-blue-950 via-blue-900 to-blue-800 flex flex-col items-center justify-center px-4 py-20">
       {/* Card */}
       <div className="bg-white rounded-3xl shadow-xl p-6 sm:p-10 max-w-lg w-full text-center">
         {/* Checkmark */}
