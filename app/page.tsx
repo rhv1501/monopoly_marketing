@@ -1,65 +1,114 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Navbar from "@/app/components/Navbar";
+import Hero from "@/app/components/Hero";
+import SocialProof from "@/app/components/SocialProof";
+import Products from "@/app/components/Products";
+import WhyChooseUs from "@/app/components/WhyChooseUs";
+import Reviews from "@/app/components/Reviews";
+import LeadForm from "@/app/components/LeadForm";
+import FAQ from "@/app/components/FAQ";
+import FinalCTA from "@/app/components/FinalCTA";
+import Footer from "@/app/components/Footer";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Playground Equipment Supplier in Chennai | Monopoly Marketing",
+  description:
+    "Monopoly Marketing — playground equipment supplier in Chennai for schools and preschools. Montessori materials, preschool toys, kids furniture, soft play area setup, and school kits across Chennai and Tamil Nadu.",
+  alternates: {
+    canonical: "https://www.monopolymarketing.co.in",
+  },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Monopoly Marketing",
+  description:
+    "Leading playground equipment supplier in Chennai offering outdoor playground equipment, indoor play equipment, Montessori toys, and school furniture for schools and institutions across India.",
+  url: "https://www.monopolymarketing.co.in",
+  telephone: process.env.NEXT_PUBLIC_PHONE ?? "+919876543210",
+  email: process.env.NEXT_PUBLIC_EMAIL ?? "info@monopolymarketing.co.in",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Chennai",
+    addressRegion: "Tamil Nadu",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "13.0827",
+    longitude: "80.2707",
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "India",
+  },
+  knowsAbout: [
+    "playground equipment",
+    "outdoor playground equipment",
+    "indoor play equipment",
+    "Montessori toys",
+    "Montessori materials",
+    "Montessori sensory materials",
+    "educational wooden toys",
+    "preschool toys",
+    "role play toys",
+    "Tamil tracing learning boards",
+    "school furniture",
+    "preschool furniture",
+    "kids furniture",
+    "school storage units",
+    "preschool kits",
+    "soft play equipment",
+    "softplay area setup",
+    "customized softplay area for kids",
+    "kids learning kits",
+  ],
+  foundingDate: "2000",
+  slogan: "Premium Play Equipment for Schools Across India",
+  priceRange: "₹₹",
+};
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      {/* LocalBusiness JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+
+      <Navbar />
+
+      <main id="main-content">
+        {/* 1. Hero */}
+        <Hero />
+
+        {/* 2. Social Proof Strip */}
+        <SocialProof />
+
+        {/* 3. Products */}
+        <Products />
+
+        {/* 4. Why Choose Us */}
+        <WhyChooseUs />
+
+        {/* 5. Customer Reviews */}
+        <Reviews />
+
+        {/* 6. Lead Capture Form */}
+        <LeadForm />
+
+        {/* 7. FAQ */}
+        <FAQ />
+
+        {/* 8. Final CTA */}
+        <FinalCTA />
       </main>
-    </div>
+
+      <Footer />
+    </>
   );
 }
