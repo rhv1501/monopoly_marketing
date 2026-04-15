@@ -1,6 +1,7 @@
 export default function Footer() {
   const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "919876543210";
-  const email = process.env.NEXT_PUBLIC_EMAIL ?? "info@monopolymarketing.co.in";
+  const email = process.env.NEXT_PUBLIC_EMAIL ?? "monopolymarketingchennai@gmail.com";
+  const phone = process.env.NEXT_PUBLIC_PHONE ?? "+91 80438 47565";
   const year = new Date().getFullYear();
   const productLinks = [
     { href: "#outdoor-playground", label: "Outdoor Playground Equipment" },
@@ -50,11 +51,11 @@ export default function Footer() {
               Leading playground equipment supplier in Chennai with 25+ years of
               experience. We supply outdoor playground equipment, indoor soft
               play, Montessori toys &amp; school furniture to schools and
-              institutions across India.
+              institutions across South India (TN, KL &amp; AP).
             </p>
             <address className="not-italic space-y-2 text-sm">
               <p>📍 Chennai, Tamil Nadu, India</p>
-              <p>📞 Contact via WhatsApp chat</p>
+              <p>📞 {phone}</p>
               <p>
                 ✉️{" "}
                 <a
@@ -126,15 +127,15 @@ export default function Footer() {
             </ul>
 
             {/* Service areas */}
-            <div className="mt-6">
-              <h3 className="text-white font-semibold text-sm mb-3">
-                Service Areas
-              </h3>
-              <p className="text-xs leading-relaxed">
-                Chennai • Bangalore • Hyderabad • Coimbatore • Madurai • Trichy
-                • Mumbai • Pan India
-              </p>
-            </div>
+              <div className="mt-6">
+                <h3 className="text-white font-semibold text-sm mb-3">
+                  Service Areas
+                </h3>
+                <p className="text-xs leading-relaxed">
+                  Chennai • Coimbatore • Madurai • Trichy • Tirupati • Nellore •
+                  Kerala • Tamil Nadu • Andhra Pradesh
+                </p>
+              </div>
           </div>
         </div>
 

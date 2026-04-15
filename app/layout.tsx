@@ -13,16 +13,16 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.monopolymarketing.co.in"),
   title: {
     default:
-      "Monopoly Marketing | Playground Equipment Supplier in Chennai, India",
+      "Monopoly Marketing | Playground Equipment Supplier in Chennai & South India",
     template: "%s | Monopoly Marketing Chennai",
   },
   description:
-    "Monopoly Marketing – Leading playground equipment supplier in Chennai. We supply outdoor playground equipment, indoor soft play, Montessori toys & school furniture to schools, preschools & institutions across India.",
+    "Monopoly Marketing – Leading playground equipment supplier in Chennai. We supply outdoor playground equipment, indoor soft play, Montessori toys & school furniture to schools, preschools & institutions across South India (Tamil Nadu, Kerala, Andhra Pradesh).",
   keywords: [
     "playground equipment supplier in Chennai",
-    "school playground equipment India",
+    "school playground equipment South India",
     "kids play equipment suppliers Chennai",
-    "Montessori toys wholesale India",
+    "Montessori toys wholesale South India",
     "Montessori materials supplier in Chennai",
     "Montessori sensory materials Chennai",
     "Tamil tracing learning boards Chennai",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "preschool desks tables and chairs Chennai",
     "school storage units Chennai",
     "indoor play equipment for schools",
-    "outdoor play equipment manufacturers India",
+    "outdoor play equipment manufacturers South India",
     "play school setup equipment Chennai",
     "best play school toys manufacturers in Chennai",
     "preschool toy wholesalers in Vepery",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     "softplay area setup in Chennai",
     "softplay area setup in Tamil Nadu",
     "customized softplay area for kids",
-    "school furniture wholesale India",
+    "school furniture wholesale South India",
     "playground equipment Chennai",
     "Montessori materials Chennai",
     "kids play area setup Chennai",
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     url: "https://www.monopolymarketing.co.in",
     siteName: "Monopoly Marketing",
     title:
-      "Monopoly Marketing | #1 Playground Equipment Supplier in Chennai, India",
+      "Monopoly Marketing | #1 Playground Equipment Supplier in Chennai & South India",
     description:
-      "Trusted by 100+ schools & institutions. Premium playground equipment, Montessori toys, and school furniture supplier in Chennai with pan-India delivery.",
+      "Trusted by 100+ schools & institutions. Premium playground equipment, Montessori toys, and school furniture supplier in Chennai with fast delivery across South India.",
     images: [
       {
         url: "/hero-playground.png",

@@ -5,7 +5,7 @@ const products = [
     id: "outdoor-playground",
     title: "Outdoor Playground Equipment",
     description:
-      "Robust, IS-certified outdoor playground equipment for schools in Chennai and across India. Multi-play stations, slides, swings, climbing frames & more — built for durability and safety.",
+      "Robust, IS-certified outdoor playground equipment for schools in Chennai and across South India. Multi-play stations, slides, swings, climbing frames & more — built for durability and safety.",
     image: "/outdoor-playground.png",
     alt: "Outdoor playground equipment supplier in Chennai",
     tag: "Most Popular",
@@ -25,9 +25,9 @@ const products = [
     id: "montessori-toys",
     title: "Montessori Toys & Materials",
     description:
-      "Wholesale Montessori educational toys and materials for preschools across India. Pink towers, alphabet boxes, bead frames, shape sorters & complete Montessori classroom sets.",
+      "Wholesale Montessori educational toys and materials for preschools across South India. Pink towers, alphabet boxes, bead frames, shape sorters & complete Montessori classroom sets.",
     image: "/montessori-toys.png",
-    alt: "Montessori toys wholesale India Chennai",
+    alt: "Montessori toys wholesale South India Chennai",
     tag: "Educational",
     tagColor: "bg-emerald-600",
   },
@@ -37,7 +37,7 @@ const products = [
     description:
       "Ergonomic, colorful preschool furniture wholesale for nurseries and play schools. Desks, chairs, activity tables, storage units — available in bulk at competitive pricing.",
     image: "/school-furniture.png",
-    alt: "Preschool furniture suppliers Chennai India",
+    alt: "Preschool furniture suppliers Chennai South India",
     tag: "Bulk Pricing",
     tagColor: "bg-purple-600",
   },

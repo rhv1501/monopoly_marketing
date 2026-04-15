@@ -32,9 +32,9 @@ const faqs = [
   },
   {
     question:
-      "Do you supply playground equipment and school furniture across India?",
+      "Do you provide delivery and setup across South India?",
     answer:
-      "Absolutely. While we are headquartered in Chennai, Tamil Nadu, Monopoly Marketing supplies playground equipment, Montessori toys, and school furniture to schools and institutions across all major states in India — including Maharashtra, Karnataka, Andhra Pradesh, Kerala, Delhi, and more.",
+      "Absolutely. While we are headquartered in Chennai, Monopoly Marketing specializes in supplying and installing playground equipment, Montessori toys, and school furniture across South India — including Tamil Nadu, Andhra Pradesh (Tirupati, Nellore), and Kerala.",
     links: [
       {
         href: "#school-furniture",

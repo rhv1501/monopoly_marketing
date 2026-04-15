@@ -55,7 +55,7 @@ export default function Hero() {
             Trusted by schools &amp; institutions for safe, durable, and
             engaging kids&apos; play solutions. From outdoor playground
             equipment to Montessori toys &amp; school furniture — we deliver
-            across India.
+            across South India.
           </p>
 
           {/* CTA Buttons */}
@@ -110,7 +110,7 @@ export default function Hero() {
               { icon: "🏆", text: "25+ Years Experience" },
               { icon: "🏫", text: "100+ Schools Served" },
               { icon: "✅", text: "IS Certified Materials" },
-              { icon: "🚚", text: "Pan-India Delivery" },
+              { icon: "🚚", text: "South India Delivery" },
             ].map((badge) => (
               <div
                 key={badge.text}

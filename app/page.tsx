@@ -13,7 +13,7 @@ import Footer from "@/app/components/Footer";
 export const metadata: Metadata = {
   title: "Playground Equipment Supplier in Chennai | Monopoly Marketing",
   description:
-    "Monopoly Marketing — playground equipment supplier in Chennai for schools and preschools. Montessori materials, preschool toys, kids furniture, soft play area setup, and school kits across Chennai and Tamil Nadu.",
+    "Monopoly Marketing — playground equipment supplier in Chennai for schools and preschools. Montessori materials, preschool toys, kids furniture, soft play area setup, and school kits across South India (TN, KL, AP).",
   alternates: {
     canonical: "https://www.monopolymarketing.co.in",
   },
@@ -24,10 +24,10 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Monopoly Marketing",
   description:
-    "Leading playground equipment supplier in Chennai offering outdoor playground equipment, indoor play equipment, Montessori toys, and school furniture for schools and institutions across India.",
+    "Leading playground equipment supplier in Chennai offering outdoor playground equipment, indoor play equipment, Montessori toys, and school furniture for schools and institutions across South India.",
   url: "https://www.monopolymarketing.co.in",
   telephone: process.env.NEXT_PUBLIC_PHONE ?? "+919876543210",
-  email: process.env.NEXT_PUBLIC_EMAIL ?? "info@monopolymarketing.co.in",
+  email: process.env.NEXT_PUBLIC_EMAIL ?? "monopolymarketingchennai@gmail.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Chennai",
@@ -39,10 +39,11 @@ const localBusinessSchema = {
     latitude: "13.0827",
     longitude: "80.2707",
   },
-  areaServed: {
-    "@type": "Country",
-    name: "India",
-  },
+  areaServed: [
+    { "@type": "State", name: "Tamil Nadu" },
+    { "@type": "State", name: "Andhra Pradesh" },
+    { "@type": "State", name: "Kerala" },
+  ],
   knowsAbout: [
     "playground equipment",
     "outdoor playground equipment",
@@ -65,7 +66,7 @@ const localBusinessSchema = {
     "kids learning kits",
   ],
   foundingDate: "2000",
-  slogan: "Premium Play Equipment for Schools Across India",
+  slogan: "Premium Play Equipment for Schools Across South India",
   priceRange: "₹₹",
 };
 

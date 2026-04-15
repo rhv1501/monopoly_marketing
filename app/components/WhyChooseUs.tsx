@@ -21,7 +21,7 @@ const usps = [
     icon: "🚚",
     title: "Fast Delivery",
     description:
-      "Pan-India delivery with fast turnaround times. We supply outdoor and indoor play equipment across all major states.",
+      "Fast delivery across South India with quick turnaround. We supply outdoor and indoor play equipment across major districts.",
   },
   {
     icon: "✅",
