@@ -51,7 +51,7 @@ export default function StickyCTA() {
         className="flex items-center justify-center w-14 h-14 rounded-full shadow-lg text-white hover:scale-110 transition-all"
         style={{ background: "#25D366" }}
         aria-label="Chat on WhatsApp"
-        id="sticky-whatsapp-btn"
+        id="sticky-whatsapp-btn contact"
       >
         <svg
           className="w-7 h-7"

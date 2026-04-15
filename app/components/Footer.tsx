@@ -72,6 +72,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
+                  id="contact"
                 >
                   WhatsApp Us
                 </a>

@@ -88,7 +88,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary text-base px-8 py-4 w-full sm:w-auto"
-              id="hero-whatsapp-cta"
+              id="hero-whatsapp-cta contact"
               data-track-event="whatsapp_click"
               data-track-source="hero"
             >
