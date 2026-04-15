@@ -187,7 +187,7 @@ export default function LeadForm() {
     const isSecure = window.location.protocol === "https:";
     document.cookie = `${LEAD_GATE_COOKIE}=${encodeURIComponent(leadToken)}; Max-Age=${LEAD_GATE_MAX_AGE_SECONDS}; Path=/; SameSite=Lax${isSecure ? "; Secure" : ""}`;
 
-    router.push(`/thank-you`);
+    window.location.assign("/thank-you");
   }
 
   return (
