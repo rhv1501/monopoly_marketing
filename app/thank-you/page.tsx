@@ -4,10 +4,6 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import ThankYouCleanup from "./ThankYouCleanup";
 
-type ThankYouPageProps = {
-  // searchParams removed as lead ID is now cookie-managed
-};
-
 const LEAD_GATE_COOKIE = "mm_lead_gate";
 
 export const metadata: Metadata = {
@@ -16,9 +12,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-export default async function ThankYouPage({
-  searchParams,
-}: ThankYouPageProps) {
+export default async function ThankYouPage() {
   const cookieStore = await cookies();
   const leadToken = cookieStore.get(LEAD_GATE_COOKIE)?.value;
 
