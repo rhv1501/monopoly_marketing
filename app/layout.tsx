@@ -103,6 +103,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   const ga4Id = process.env.NEXT_PUBLIC_GA4_ID;
+  const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
   const shouldLoadDirectGa4 = Boolean(ga4Id && !gtmId);
 
   return (
@@ -129,6 +130,20 @@ export default function RootLayout({
             <script
               dangerouslySetInnerHTML={{
                 __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga4Id}');`,
+              }}
+            />
+          </>
+        )}
+        {/* Google Ads Tag (gtag.js) */}
+        {adsId && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${adsId}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${adsId}');`,
               }}
             />
           </>
