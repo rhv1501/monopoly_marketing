@@ -81,8 +81,9 @@ export default function Products() {
                   src={product.image}
                   alt={product.alt}
                   fill
+                  quality={60}
                   className="object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) calc((100vw - 96px) / 2), min(calc((100vw - 160px) / 4), 296px)"
                 />
                 {/* Tag */}
                 <span

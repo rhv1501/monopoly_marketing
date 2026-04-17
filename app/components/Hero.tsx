@@ -15,6 +15,8 @@ export default function Hero() {
           alt="Children playing on premium school playground equipment"
           fill
           priority
+          fetchPriority="high"
+          quality={60}
           className="object-cover opacity-20"
           sizes="100vw"
         />
