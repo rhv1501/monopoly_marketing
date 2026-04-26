@@ -1,14 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 const BUSINESS_TYPES = [
-  "School",
-  "Preschool / Play School",
-  "Daycare Center",
-  "Activity Center",
-  "Montessori School",
+  "School / Preschool",
+  "Apartment / Gated Community",
+  "Individual House (Home Use)",
+  "Commercial Play Zone",
+  "Daycare / Activity Center",
   "Institution / NGO",
   "Other",
 ];
@@ -93,7 +92,6 @@ function SubmitButton({ pending }: { pending: boolean }) {
 }
 
 export default function LeadForm() {
-  const router = useRouter();
   const appsScriptUrl = process.env.NEXT_PUBLIC_APPS_SCRIPT_URL;
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -205,12 +203,12 @@ export default function LeadForm() {
               id="form-heading"
               className="text-3xl sm:text-4xl font-black text-gray-900 mt-2 mb-4"
             >
-              Request a Free Quote for Your School
+              Request a Free Quote for Your Project
             </h2>
             <p className="text-gray-500 text-base sm:text-lg mb-6 sm:mb-8">
-              Whether you need outdoor playground equipment for schools in
-              Chennai or a full play school setup — our team will create a
-              custom proposal within 24 hours.
+              Whether it&apos;s a school playground, an apartment common area,
+              or a safe play zone for your home — our team will create a custom
+              proposal within 24 hours.
             </p>
 
             <ul className="space-y-4">
@@ -339,7 +337,7 @@ export default function LeadForm() {
                   htmlFor="businessType"
                   className="block text-blue-200 text-sm font-medium mb-1.5"
                 >
-                  Type of Institution
+                  Type of Project / Premises
                 </label>
                 <select
                   id="businessType"
@@ -348,7 +346,7 @@ export default function LeadForm() {
                   defaultValue=""
                 >
                   <option value="" disabled>
-                    Select your institution type
+                    Select project type (School, Home, etc.)
                   </option>
                   {BUSINESS_TYPES.map((type) => (
                     <option key={type} value={type}>
@@ -370,7 +368,7 @@ export default function LeadForm() {
                   id="requirement"
                   name="requirement"
                   rows={3}
-                  placeholder="e.g. Outdoor playground setup for 200 students, budget ₹5L"
+                  placeholder="e.g. Indoor play zone for apartment, budget ₹5L"
                   className="form-input resize-none"
                 />
               </div>

@@ -17,10 +17,17 @@ export const metadata: Metadata = {
     template: "%s | Monopoly Marketing Chennai",
   },
   description:
-    "Monopoly Marketing – Leading playground equipment supplier in Chennai. We supply outdoor playground equipment, indoor soft play, Montessori toys & school furniture to schools, preschools & institutions across South India (Tamil Nadu, Kerala, Andhra Pradesh).",
+    "Monopoly Marketing – Leading playground equipment supplier in Chennai. We supply outdoor playground equipment, indoor soft play, Montessori toys & kids furniture for schools, homes, apartments & commercial play zones across South India.",
   keywords: [
     "playground equipment supplier in Chennai",
     "school playground equipment South India",
+    "kids play area for apartments Chennai",
+    "home playground equipment Tamil Nadu",
+    "gated community play area setup",
+    "indoor play zone equipment supplier",
+    "commercial soft play setup Chennai",
+    "pay per hour play area setup India",
+    "residential community playground equipment",
     "kids play equipment suppliers Chennai",
     "Montessori toys wholesale South India",
     "Montessori materials supplier in Chennai",
@@ -63,7 +70,7 @@ export const metadata: Metadata = {
     title:
       "Monopoly Marketing | #1 Playground Equipment Supplier in Chennai & South India",
     description:
-      "Trusted by 100+ schools & institutions. Premium playground equipment, Montessori toys, and school furniture supplier in Chennai with fast delivery across South India.",
+      "Join a growing community of satisfied property owners. Premium playground equipment, Montessori toys, and play furniture supplier in Chennai with fast delivery across South India.",
     images: [
       {
         url: "/hero-playground.png",
@@ -77,7 +84,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Monopoly Marketing | Playground Equipment Supplier Chennai",
     description:
-      "Premium playground & Montessori equipment for schools. 25+ years experience.",
+      "Premium playground & Montessori equipment for schools, homes & apartments. 25+ years experience.",
     images: ["/hero-playground.png"],
   },
   robots: {

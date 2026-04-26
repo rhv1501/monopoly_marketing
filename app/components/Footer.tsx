@@ -7,7 +7,7 @@ export default function Footer() {
     { href: "#outdoor-playground", label: "Outdoor Playground Equipment" },
     { href: "#indoor-play", label: "Indoor Play Equipment" },
     { href: "#montessori-toys", label: "Montessori Toys & Materials" },
-    { href: "#school-furniture", label: "School Furniture" },
+    { href: "#school-furniture", label: "Kids & Play Furniture" },
     { href: "#indoor-play", label: "Soft Play Equipment" },
     { href: "#products", label: "Kids Play Area Setup" },
   ];
@@ -50,8 +50,8 @@ export default function Footer() {
             <p className="text-sm leading-relaxed max-w-sm mb-5">
               Leading playground equipment supplier in Chennai with 25+ years of
               experience. We supply outdoor playground equipment, indoor soft
-              play, Montessori toys &amp; school furniture to schools and
-              institutions across South India (TN, KL &amp; AP).
+              play, Montessori toys &amp; kids furniture for schools, homes, and
+              apartments across South India (TN, KL &amp; AP).
             </p>
             <address className="not-italic space-y-2 text-sm">
               <p>📍 Chennai, Tamil Nadu, India</p>

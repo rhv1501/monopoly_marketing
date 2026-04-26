@@ -140,11 +140,15 @@ function getReviewTag(review: LocalReview) {
     review.authorName.toLowerCase().includes("play area") ||
     review.text.toLowerCase().includes("playzone")
   ) {
-    return "Play Area Setup";
+    return "Commercial Play Project";
+  }
+
+  if (review.text.toLowerCase().includes("home") || review.text.toLowerCase().includes("house")) {
+    return "Home Project";
   }
 
   if (review.text.toLowerCase().includes("montessori")) {
-    return "Montessori";
+    return "Montessori Setup";
   }
 
   return "Verified Buyer";
@@ -229,7 +233,7 @@ export default function Reviews() {
             id="reviews-heading"
             className="text-3xl sm:text-4xl font-black text-gray-900 mt-2 mb-3"
           >
-            What Schools &amp; Institutions Say
+            What Our Customers Say
           </h2>
 
           <div className="flex flex-wrap items-center justify-center gap-2 mt-4">
@@ -243,7 +247,7 @@ export default function Reviews() {
               20 verified testimonials
             </span>
             <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-semibold text-blue-700">
-              Schools, preschools, play areas
+              Schools, Homes, Apartments
             </span>
           </div>
         </div>

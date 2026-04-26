@@ -47,17 +47,16 @@ export default function Hero() {
 
           {/* H1 */}
           <h1 className="animate-fade-in-up text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mb-5 sm:mb-6">
-            Premium{" "}
+            Elevate Every Space with World-Class{" "}
             <span className="text-orange-400">Playground & Montessori</span>{" "}
-            Equipment for Schools in Chennai
+            Equipment
           </h1>
 
           {/* Subheadline */}
           <p className="animate-fade-in-up-delay-1 text-base sm:text-xl text-blue-100 leading-relaxed mb-7 sm:mb-8 max-w-2xl">
-            Trusted by schools &amp; institutions for safe, durable, and
-            engaging kids&apos; play solutions. From outdoor playground
-            equipment to Montessori toys &amp; school furniture — we deliver
-            across South India.
+            Safe, Engaging &amp; Durable Play Solutions for Schools, Gated
+            Communities, Commercial Zones &amp; Private Homes. Delivering
+            Excellence Across South India.
           </p>
 
           {/* CTA Buttons */}
@@ -86,7 +85,7 @@ export default function Hero() {
               Get Free Quote
             </a>
             <a
-              href={`https://wa.me/${whatsapp}?text=Hi%2C%20I%20need%20playground%20equipment%20for%20my%20school`}
+              href={`https://wa.me/${whatsapp}?text=Hi%2C%20I%20need%20playground%20equipment%20for%20my%20premises`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary text-base px-8 py-4 w-full sm:w-auto"
@@ -110,8 +109,8 @@ export default function Hero() {
           <div className="animate-fade-in-up-delay-3 flex flex-wrap gap-2.5 sm:gap-3">
             {[
               { icon: "🏆", text: "25+ Years Experience" },
-              { icon: "🏫", text: "100+ Schools Served" },
-              { icon: "✅", text: "IS Certified Materials" },
+              { icon: "🤝", text: "Trusted by 250+ Clients" },
+              { icon: "🎨", text: "Custom Play Designs" },
               { icon: "🚚", text: "South India Delivery" },
             ].map((badge) => (
               <div
@@ -131,7 +130,7 @@ export default function Hero() {
         <div className="mt-8 sm:mt-10 animate-fade-in">
           <p className="inline-flex items-start sm:items-center gap-2 text-orange-300 text-xs sm:text-sm font-semibold leading-relaxed">
             <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse" />
-            ⚡ Limited slots for school setup this month — Book your free
+            ⚡ Limited slots for installation this month — Book your free
             consultation today!
           </p>
         </div>

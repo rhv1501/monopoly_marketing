@@ -13,7 +13,7 @@ import Footer from "@/app/components/Footer";
 export const metadata: Metadata = {
   title: "Playground Equipment Supplier in Chennai | Monopoly Marketing",
   description:
-    "Monopoly Marketing — playground equipment supplier in Chennai for schools and preschools. Montessori materials, preschool toys, kids furniture, soft play area setup, and school kits across South India (TN, KL, AP).",
+    "Monopoly Marketing — playground equipment supplier in Chennai for schools, homes, and apartments. Montessori materials, soft play area setup, and kids furniture across South India.",
   alternates: {
     canonical: "https://www.monopolymarketing.co.in",
   },
@@ -24,7 +24,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Monopoly Marketing",
   description:
-    "Leading playground equipment supplier in Chennai offering outdoor playground equipment, indoor play equipment, Montessori toys, and school furniture for schools and institutions across South India.",
+    "Leading playground equipment supplier in Chennai offering outdoor playground equipment, indoor play equipment, Montessori toys, and play furniture for schools, homes, and apartments across South India.",
   url: "https://www.monopolymarketing.co.in",
   telephone: process.env.NEXT_PUBLIC_PHONE ?? "+919876543210",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "monopolymarketingchennai@gmail.com",
@@ -61,12 +61,15 @@ const localBusinessSchema = {
     "school storage units",
     "preschool kits",
     "soft play equipment",
-    "softplay area setup",
+    "softplay area setup in Chennai",
     "customized softplay area for kids",
     "kids learning kits",
+    "apartment play area equipment",
+    "home playground setup",
+    "commercial play zone setup",
   ],
   foundingDate: "2000",
-  slogan: "Premium Play Equipment for Schools Across South India",
+  slogan: "Premium Play Equipment for Schools, Homes & Apartments Across South India",
   priceRange: "₹₹",
 };
 

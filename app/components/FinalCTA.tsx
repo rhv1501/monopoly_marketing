@@ -15,14 +15,15 @@ export default function FinalCTA() {
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-5">
-          Build a Safe &amp; Fun Play Area for Your Students Today
+          Build a Safe &amp; Fun Play Area for Your Premises Today
         </h2>
         <p className="text-blue-100 text-base sm:text-lg mb-3 max-w-2xl mx-auto">
-          Join 100+ schools across South India who trust Monopoly Marketing for
-          premium kids&apos; play equipment and Montessori supplies.
+          Join a growing community of satisfied property owners across South
+          India who trust Monopoly Marketing for premium kids&apos; play
+          equipment and Montessori supplies.
         </p>
         <p className="text-orange-300 font-semibold text-xs sm:text-sm mb-8 sm:mb-10">
-          ⚡ Limited slots for school setup this month — Act now!
+          ⚡ Limited slots for installation this month — Act now!
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
@@ -50,7 +51,7 @@ export default function FinalCTA() {
             Get Free Consultation
           </a>
           <a
-            href={`https://wa.me/${whatsapp}?text=Hi%2C%20I%20need%20playground%20equipment%20for%20my%20school`}
+            href={`https://wa.me/${whatsapp}?text=Hi%2C%20I%20need%20playground%20equipment%20for%20my%20premises`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary text-base px-8 py-4 w-full sm:w-auto"

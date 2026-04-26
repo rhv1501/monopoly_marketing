@@ -10,7 +10,7 @@ interface ThankYouCleanupProps {
 
 declare global {
   interface Window {
-    dataLayer: any[];
+    dataLayer: Record<string, unknown>[];
   }
 }
 
@@ -41,7 +41,7 @@ export default function ThankYouCleanup({ leadToken }: ThankYouCleanupProps) {
         if (keys.length > 10) {
           keys.sort().slice(0, keys.length - 10).forEach(k => localStorage.removeItem(k));
         }
-      } catch (e) {
+      } catch {
         // Silently fail if localStorage is full or restricted
       }
     }

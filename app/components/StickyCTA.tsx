@@ -45,7 +45,7 @@ export default function StickyCTA() {
     >
       {/* WhatsApp button */}
       <a
-        href={`https://wa.me/${whatsapp}?text=Hi%2C%20I%27m%20interested%20in%20playground%20equipment%20for%20my%20school`}
+        href={`https://wa.me/${whatsapp}?text=Hi%2C%20I%27m%20interested%20in%20playground%20equipment%20for%20my%20premises`}
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center w-14 h-14 rounded-full shadow-lg text-white hover:scale-110 transition-all"

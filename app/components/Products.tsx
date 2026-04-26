@@ -5,9 +5,9 @@ const products = [
     id: "outdoor-playground",
     title: "Outdoor Playground Equipment",
     description:
-      "Robust, IS-certified outdoor playground equipment for schools in Chennai and across South India. Multi-play stations, slides, swings, climbing frames & more — built for durability and safety.",
+      "Robust, premium-quality outdoor playground equipment for schools, apartments, and gated communities. Multi-play stations, slides, swings, climbing frames & more — built for durability and safety.",
     image: "/outdoor-playground.png",
-    alt: "Outdoor playground equipment supplier in Chennai",
+    alt: "Outdoor playground equipment for apartments and schools Chennai",
     tag: "Most Popular",
     tagColor: "bg-orange-500",
   },
@@ -15,9 +15,9 @@ const products = [
     id: "indoor-play",
     title: "Indoor Play Equipment",
     description:
-      "Safe, colorful indoor soft play equipment for schools, daycares and activity centers. Ball pools, foam structures, climbing tunnels & sensory play zones designed for ages 1–10.",
+      "Safe, colorful indoor soft play equipment for schools, homes, and commercial play zones. Ball pools, foam structures, climbing tunnels & sensory play zones designed for maximum engagement.",
     image: "/indoor-play.png",
-    alt: "Indoor play equipment for schools Chennai",
+    alt: "Indoor play equipment for homes and schools Chennai",
     tag: "Trending",
     tagColor: "bg-blue-600",
   },
@@ -27,17 +27,17 @@ const products = [
     description:
       "Wholesale Montessori educational toys and materials for preschools across South India. Pink towers, alphabet boxes, bead frames, shape sorters & complete Montessori classroom sets.",
     image: "/montessori-toys.png",
-    alt: "Montessori toys wholesale South India Chennai",
+    alt: "Montessori toys and materials wholesale South India Chennai",
     tag: "Educational",
     tagColor: "bg-emerald-600",
   },
   {
     id: "school-furniture",
-    title: "School Furniture",
+    title: "Kids & Play Furniture",
     description:
-      "Ergonomic, colorful preschool furniture wholesale for nurseries and play schools. Desks, chairs, activity tables, storage units — available in bulk at competitive pricing.",
+      "Ergonomic, colorful kids furniture for schools, nurseries, and activity centers. Desks, chairs, storage units, and activity tables — available in premium quality at competitive pricing.",
     image: "/school-furniture.png",
-    alt: "Preschool furniture suppliers Chennai South India",
+    alt: "Kids and play furniture suppliers Chennai South India",
     tag: "Bulk Pricing",
     tagColor: "bg-purple-600",
   },
@@ -62,7 +62,7 @@ export default function Products() {
           </h2>
           <p className="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto">
             Trusted playground equipment supplier in Chennai offering end-to-end
-            play area setup solutions for schools and institutions.
+            play area setup solutions for schools, homes, and commercial spaces.
           </p>
         </div>
 

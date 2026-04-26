@@ -1,9 +1,9 @@
 const faqs = [
   {
     question:
-      "What is the cost of playground equipment for schools in Chennai?",
+      "What is the cost of playground equipment in Chennai?",
     answer:
-      "The cost of playground equipment varies depending on the type, size, and complexity of the installation. At Monopoly Marketing, we offer competitive pricing for schools, preschools, and institutions. A basic play station can start from ₹50,000, while a full outdoor multi-play setup can range from ₹2L to ₹15L. Contact us for a free custom quote tailored to your budget and requirements.",
+      "The cost of playground equipment varies depending on the type, size, and location. At Monopoly Marketing, we offer competitive pricing for schools, apartments, commercial play zones, and individual homes. A basic indoor play station can start from ₹50,000, while full outdoor multi-play setups range from ₹2L to ₹15L+. Contact us for a free custom quote and layout design.",
     links: [
       {
         href: "#products",
@@ -34,11 +34,11 @@ const faqs = [
     question:
       "Do you provide delivery and setup across South India?",
     answer:
-      "Absolutely. While we are headquartered in Chennai, Monopoly Marketing specializes in supplying and installing playground equipment, Montessori toys, and school furniture across South India — including Tamil Nadu, Andhra Pradesh (Tirupati, Nellore), and Kerala.",
+      "Absolutely. While we are headquartered in Chennai, Monopoly Marketing specializes in supplying and installing playground equipment, Montessori toys, and kids furniture across South India — including Tamil Nadu, Andhra Pradesh, and Kerala.",
     links: [
       {
         href: "#school-furniture",
-        label: "See school furniture solutions",
+        label: "See kids furniture solutions",
       },
       {
         href: "#montessori-toys",
@@ -49,7 +49,7 @@ const faqs = [
   {
     question: "Are your materials safe for children?",
     answer:
-      "Yes, child safety is our top priority. All our playground equipment and Montessori materials meet Indian Safety Standards (IS) and are made from non-toxic, UV-resistant, splinter-free, and child-safe materials. We use HDPE, FRP, and powder-coated galvanized steel that are built to withstand heavy use and outdoor conditions.",
+      "Yes, child safety is our top priority. All our playground equipment and Montessori materials are made from non-toxic, UV-resistant, splinter-free, and child-safe materials. We use HDPE, FRP, and powder-coated galvanized steel that are built to withstand heavy use and outdoor conditions.",
     links: [
       {
         href: "#reviews",
@@ -63,9 +63,9 @@ const faqs = [
   },
   {
     question:
-      "Do you offer bulk/wholesale pricing for schools and institutions?",
+      "Do you offer bulk pricing for large projects?",
     answer:
-      "Yes, we offer attractive bulk pricing and wholesale rates for schools, school chains, preschool franchises, and institutions looking to set up multiple campuses. The more you order, the better the pricing. Reach out to our team to get a customized bulk quotation.",
+      "Yes, we offer attractive bulk pricing for schools, apartment complexes, and commercial play centers. Whether you are setting up multiple preschool campuses or a large-scale gated community play area, we provide special rates for high-volume orders.",
     links: [
       {
         href: "#products",
@@ -117,7 +117,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-gray-500 text-sm sm:text-base">
-            Common questions about our playground equipment and school supplies.
+            Common questions about our playground equipment and kids furniture.
           </p>
         </div>
 

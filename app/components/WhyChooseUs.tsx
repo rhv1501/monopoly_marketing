@@ -3,7 +3,7 @@ const usps = [
     icon: "🏆",
     title: "25+ Years of Experience",
     description:
-      "Over two decades serving schools and institutions across Chennai and South India with quality playground solutions.",
+      "Over two decades providing quality playground solutions for schools, homes, and gated communities across South India.",
   },
   {
     icon: "🎨",
@@ -15,7 +15,7 @@ const usps = [
     icon: "💰",
     title: "Bulk Pricing",
     description:
-      "Competitive wholesale pricing on playground equipment and school furniture for schools, chains and bulk buyers.",
+      "Competitive wholesale pricing on playground equipment and play furniture for apartment complexes, schools, and bulk buyers.",
   },
   {
     icon: "🚚",
@@ -27,7 +27,7 @@ const usps = [
     icon: "✅",
     title: "Quality Assurance",
     description:
-      "All products meet IS safety standards. Our materials are child-safe, UV-resistant, and built to last for years.",
+      "All products are built to the highest safety standards. Our materials are child-safe, UV-resistant, and built to last for years.",
   },
 ];
 
@@ -54,6 +54,27 @@ const seoCategories = [
     ],
   },
   {
+    title: "Properties & Communities",
+    items: [
+      {
+        label: "Apartment play area equipment in Chennai",
+        href: "#products",
+      },
+      {
+        label: "Gated community playground setup Tamil Nadu",
+        href: "#lead-form",
+      },
+      {
+        label: "Home playground equipment and garden play sets",
+        href: "#products",
+      },
+      {
+        label: "Commercial indoor play zone setup and design",
+        href: "#indoor-play",
+      },
+    ],
+  },
+  {
     title: "Furniture & Setup",
     items: [
       {
@@ -61,7 +82,7 @@ const seoCategories = [
         href: "#school-furniture",
       },
       {
-        label: "Preschool desks, tables, chairs and storage units",
+        label: "Kids desks, tables, chairs and storage units",
         href: "#school-furniture",
       },
       {
@@ -69,7 +90,7 @@ const seoCategories = [
         href: "#indoor-play",
       },
       {
-        label: "Play school equipment dealers in Chennai and Tamil Nadu",
+        label: "Play area equipment dealers in Chennai and Tamil Nadu",
         href: "#products",
       },
     ],
@@ -114,16 +135,16 @@ export default function WhyChooseUs() {
             id="why-us-heading"
             className="text-3xl sm:text-4xl font-black text-white mb-4"
           >
-            Why Schools Trust Monopoly Marketing
+            Why Clients Trust Monopoly Marketing
           </h2>
           <p className="text-blue-200 text-base sm:text-lg max-w-2xl mx-auto">
             The preferred kids&apos; play equipment supplier in Chennai for
-            schools, preschools and activity centers.
+            schools, homes, apartments, and commercial zones.
           </p>
           <p className="text-blue-300 text-sm sm:text-base max-w-3xl mx-auto mt-3">
             From Montessori materials and educational toys to kids furniture,
-            preschool kits, and custom soft play area setup in Chennai and Tamil
-            Nadu, we provide complete play school infrastructure under one roof.
+            residential play sets, and custom indoor play zone setup in Chennai
+            and Tamil Nadu — we provide complete infrastructure under one roof.
           </p>
         </div>
 
@@ -149,9 +170,9 @@ export default function WhyChooseUs() {
         <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
           {[
             { value: "25+", label: "Years Experience" },
-            { value: "200+", label: "Schools Served" },
-            { value: "500+", label: "Products Available" },
-            { value: "300+", label: "projects Delivered" },
+            { value: "500+", label: "Happy Clients" },
+            { value: "1000+", label: "Skus Available" },
+            { value: "300+", label: "Projects Delivered" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="text-3xl sm:text-4xl font-black text-orange-400 mb-1">

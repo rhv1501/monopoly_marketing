@@ -111,8 +111,8 @@ export default async function ThankYouPage() {
           <div className="flex justify-center flex-wrap gap-x-6 gap-y-2 opacity-30 select-none grayscale">
              {/* Simple text logos for branding consistency */}
              <span className="text-[10px] font-black tracking-[4px] uppercase">Schools</span>
-             <span className="text-[10px] font-black tracking-[4px] uppercase">Parks</span>
-             <span className="text-[10px] font-black tracking-[4px] uppercase">Institutions</span>
+             <span className="text-[10px] font-black tracking-[4px] uppercase">Apartments</span>
+             <span className="text-[10px] font-black tracking-[4px] uppercase">Home Projects</span>
           </div>
         </div>
       </div>

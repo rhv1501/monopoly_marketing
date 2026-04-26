@@ -1,17 +1,19 @@
 export default function SocialProof() {
-  const institutions = [
-    "Primary Schools",
-    "Play Schools",
-    "Preschools",
+  const segments = [
+    "Schools & Preschools",
+    "Gated Communities",
+    "Apartment Complexes",
+    "Individual Houses",
+    "Indoor Play Zones",
+    "Commercial Spaces",
     "Daycare Centers",
-    "Activity Centers",
-    "Institutions",
+    "Institutions & NGOs",
   ];
 
   return (
     <section
       className="bg-blue-950 py-8 lg:py-6 overflow-hidden relative border-y border-white/5"
-      aria-label="Trusted by institutions"
+      aria-label="Trusted by properties and schools"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
@@ -24,30 +26,30 @@ export default function SocialProof() {
           <div className="marquee-mask flex-1 relative min-w-0">
             <div className="testimonial-marquee-track flex gap-4 pr-4">
               {/* First set of items */}
-              {institutions.map((inst) => (
+              {segments.map((segment) => (
                 <span
-                  key={`marq-1-${inst}`}
+                  key={`marq-1-${segment}`}
                   className="text-[10px] sm:text-xs font-bold px-5 py-2 rounded-full bg-white/5 text-blue-50 border border-white/10 whitespace-nowrap hover:bg-white/10 transition-colors"
                 >
-                  {inst}
+                  {segment}
                 </span>
               ))}
               {/* Duplicate set for seamless loop */}
-              {institutions.map((inst) => (
+              {segments.map((segment) => (
                 <span
-                  key={`marq-2-${inst}`}
+                  key={`marq-2-${segment}`}
                   className="text-[10px] sm:text-xs font-bold px-5 py-2 rounded-full bg-white/5 text-blue-50 border border-white/10 whitespace-nowrap hover:bg-white/10 transition-colors"
                 >
-                  {inst}
+                  {segment}
                 </span>
               ))}
               {/* Triplicate just to be safe on very wide screens */}
-              {institutions.map((inst) => (
+              {segments.map((segment) => (
                 <span
-                  key={`marq-3-${inst}`}
+                  key={`marq-3-${segment}`}
                   className="text-[10px] sm:text-xs font-bold px-5 py-2 rounded-full bg-white/5 text-blue-50 border border-white/10 whitespace-nowrap hover:bg-white/10 transition-colors"
                 >
-                  {inst}
+                  {segment}
                 </span>
               ))}
             </div>
