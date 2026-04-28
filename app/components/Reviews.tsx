@@ -11,9 +11,9 @@ const REVIEWS: LocalReview[] = [
     text: "My personal experience with Monopoly Marketing is remarkable. We had a great experience with Playgro before and continued the relationship after finding support on the website. Vinitha mam explained the products clearly, helped us get the best price and equipment, and resolved a faulty product issue quickly with replacement even during holidays.",
   },
   {
-    authorName: "Customer",
+    authorName: "Sumathi",
     rating: 5,
-    text: "Great quality products and good service.",
+    text: "Very nice product",
   },
   {
     authorName: "Tiny Nest Soft Play Area",
@@ -21,89 +21,89 @@ const REVIEWS: LocalReview[] = [
     text: "Very positive experience with Monopoly Marketing for creating our indoor playzone. Geetha mam and Baskar sir were professional, responsive, and supportive throughout. Planning and execution were timely, and the finishing, safety standards, and design exceeded expectations.",
   },
   {
-    authorName: "Customer",
+    authorName: "Gopika Nair",
     rating: 5,
-    text: "One stop shop for all your school equipment needs. Good service and great quality.",
+    text: "Great quality products and good service.",
   },
   {
-    authorName: "Customer",
+    authorName: "selvi s",
     rating: 5,
-    text: "Really good place for kids learning and development products, including indoor play equipment. Quality and after-sales service are both very good in Chennai.",
+    text: "I had a very positive experience working with Monopoly Marketing team for the creation of Tiny Nest kids indoor playzone especially Geetha mam and Baskar sir were more professional, responsive, and supportive at every stage. The project was handled with good planning and timely execution. The overall experience was well-managed and the finishing, safety standards, and overall design exceeded my expectations. I would confidently recommend their services. Truly thankful for their support.",
   },
   {
-    authorName: "Customer",
+    authorName: "Mahalakshmi Anand",
     rating: 5,
-    text: "Very good indoor and outdoor equipment for kids. Quality and price are very good. A must-visit place for kids and home requirements.",
+    text: "One stop shop for all your school equipment needs. Good service & great quality.",
   },
   {
-    authorName: "Customer",
+    authorName: "Sunil K",
     rating: 5,
-    text: "The service is very good. The furniture is also very comfortable for small kids. Thank you Monopoly for the wonderful service.",
+    text: "Well this place is really good for kids as they have some good products for learning and development for kids and also many useful items.",
   },
   {
-    authorName: "Customer",
+    authorName: "Vedika Nichani",
     rating: 5,
-    text: "Excellent service. Ladder fixing, floor mat fixing, and ball pit installation were done very nicely and efficiently.",
+    text: "I had been to Monopoly Marketing & they have some very good products like indoor and outdoor equipment for kids and the quality and price are very good. A must visit place for your kids & home.",
   },
   {
-    authorName: "Customer",
+    authorName: "Girija Venkatraman",
     rating: 5,
-    text: "Good quality, fast service, good response, and reasonable cost.",
+    text: "The service is very good. The furniture is also very comfortable for small kids. Thank you Monopoly for all the wonderful products and service.",
   },
   {
-    authorName: "Customer",
+    authorName: "Sudhahar Daniel",
     rating: 5,
-    text: "All the toys are good quality. We can confidently purchase toys, and babies enjoy them a lot.",
+    text: "Excellent service… ladder fixing, floor mat fixing and ball pit is fixed very nicely and efficiently.",
   },
   {
-    authorName: "Customer",
+    authorName: "Mgs Gopi",
     rating: 5,
-    text: "I have always used their services. Best place to buy branded toys at competitive rates. Staff are attentive and follow-up is excellent.",
+    text: "Good quality. Fast service. Good response. Reasonable cost.",
   },
   {
-    authorName: "Customer",
+    authorName: "indu Mathi",
     rating: 5,
-    text: "Best place to buy playschool items. Very good service and discounts. Salesperson support was kind and helpful.",
+    text: "All the toys are in good quality. Undoubtedly we can purchase any toy from you, and babies enjoy them a lot.",
   },
   {
-    authorName: "Customer",
+    authorName: "Jayashree Anand",
     rating: 5,
-    text: "Best place to buy Montessori materials. Friendly and caring staff with a wide product range and very good service.",
+    text: "I have always used their services. Best place to buy branded toys at a very competitive rate. Staff are attentive and follow-up is excellent.",
   },
   {
-    authorName: "Customer",
+    authorName: "Vasu G",
+    rating: 5,
+    text: "All materials are very good and quality. Please visit and recommend us.",
+  },
+  {
+    authorName: "Yuvashree C",
+    rating: 5,
+    text: "The best place to buy Montessori materials. Very friendly staff and a great product range.",
+  },
+  {
+    authorName: "Anivaruday Oviya",
     rating: 5,
     text: "Way of approach is really good with immediate response.",
   },
   {
-    authorName: "Customer",
+    authorName: "Ram Online",
     rating: 5,
-    text: "Excellent place for kindergarten school items.",
+    text: "One of the best place for educational and play based toys. Their representative Baskar is courteous and helpful.",
   },
   {
-    authorName: "Customer",
+    authorName: "Ponmani Somu",
     rating: 5,
-    text: "The salesperson was kind, informative, and helpful in selecting products. Especially liked the wooden puzzle boards.",
+    text: "Products were good. The salesperson was very kind and helpful.",
   },
   {
-    authorName: "Customer",
+    authorName: "Star Kids",
     rating: 5,
-    text: "Absolutely amazing place for kids education materials and activity materials with safe and hygienic toys and puzzles for kindergarten and Montessori children. We are very happy and satisfied with the products and service.",
+    text: "Very good place for toys and preschool equipment.",
   },
   {
-    authorName: "Customer",
+    authorName: "Pravesh Balaji",
     rating: 5,
     text: "Nice place to buy kids accessories for preschool.",
-  },
-  {
-    authorName: "Customer",
-    rating: 5,
-    text: "We were looking for a small play area in our school and visited Monopoly Marketing in Shenoy Nagar. Products are excellent, safe, and made with premium quality material. Our children enjoyed the play area greatly.",
-  },
-  {
-    authorName: "Customer",
-    rating: 5,
-    text: "Very big store for play items and school items with very good service.",
   },
 ];
 
@@ -143,7 +143,10 @@ function getReviewTag(review: LocalReview) {
     return "Commercial Play Project";
   }
 
-  if (review.text.toLowerCase().includes("home") || review.text.toLowerCase().includes("house")) {
+  if (
+    review.text.toLowerCase().includes("home") ||
+    review.text.toLowerCase().includes("house")
+  ) {
     return "Home Project";
   }
 
@@ -238,17 +241,8 @@ export default function Reviews() {
 
           <div className="flex flex-wrap items-center justify-center gap-2 mt-4">
             <StarRating rating={5} />
-            <span className="text-gray-900 font-bold text-lg">5.0</span>
-            <span className="text-gray-400 text-sm">
-              / 5 from customer reviews
-            </span>
-
-            <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-semibold text-blue-700">
-              20 verified testimonials
-            </span>
-            <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-semibold text-blue-700">
-              Schools, Homes, Apartments
-            </span>
+            <span className="text-gray-900 font-bold text-lg">4.6</span>
+            <span className="text-gray-400 text-sm">/ 5 average rating</span>
           </div>
         </div>
 
