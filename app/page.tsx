@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Navbar from "@/app/components/Navbar";
 import Hero from "@/app/components/Hero";
-import SocialProof from "@/app/components/SocialProof";
+import TrustSection from "@/app/components/TrustSection";
+import SimpleLeadForm from "@/app/components/SimpleLeadForm";
 import Products from "@/app/components/Products";
-import WhyChooseUs from "@/app/components/WhyChooseUs";
+import SocialProof from "@/app/components/SocialProof";
 import Reviews from "@/app/components/Reviews";
-import LeadForm from "@/app/components/LeadForm";
+import WhyChooseUs from "@/app/components/WhyChooseUs";
 import FAQ from "@/app/components/FAQ";
 import FinalCTA from "@/app/components/FinalCTA";
 import Footer from "@/app/components/Footer";
@@ -90,25 +91,28 @@ export default function HomePage() {
         {/* 1. Hero */}
         <Hero />
 
-        {/* 2. Social Proof Strip */}
-        <SocialProof />
+        {/* 2. Trust Section (NEW) */}
+        <TrustSection />
 
-        {/* 3. Products */}
+        {/* 3. Simple Lead Capture Form (NEW) */}
+        <SimpleLeadForm />
+
+        {/* 4. Products */}
         <Products />
 
-        {/* 4. Why Choose Us */}
-        <WhyChooseUs />
+        {/* 5. Social Proof Strip */}
+        <SocialProof />
 
-        {/* 5. Customer Reviews */}
+        {/* 6. Customer Reviews */}
         <Reviews />
 
-        {/* 6. Lead Capture Form */}
-        <LeadForm />
+        {/* 7. Why Choose Us */}
+        <WhyChooseUs />
 
-        {/* 7. FAQ */}
+        {/* 8. FAQ */}
         <FAQ />
 
-        {/* 8. Final CTA */}
+        {/* 9. Final CTA */}
         <FinalCTA />
       </main>
 

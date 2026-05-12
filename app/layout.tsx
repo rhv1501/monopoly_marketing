@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import StickyCTA from "./components/StickyCTA";
+import FloatingCall from "./components/FloatingCall";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -155,6 +155,18 @@ export default function RootLayout({
             />
           </>
         )}
+        {/* Microsoft Clarity */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "wpu7q33am7");
+            `,
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col">
         {/* GTM noscript fallback */}
@@ -169,7 +181,7 @@ export default function RootLayout({
           </noscript>
         )}
         {children}
-        <StickyCTA />
+        <FloatingCall />
       </body>
     </html>
   );

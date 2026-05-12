@@ -134,7 +134,7 @@ export default function Footer() {
                 </h3>
                 <p className="text-xs leading-relaxed">
                   Chennai • Coimbatore • Madurai • Trichy • Tirupati • Nellore •
-                  Kerala • Tamil Nadu • Andhra Pradesh
+                  Kerala • Tamil Nadu • Andhra Pradesh • Karnataka
                 </p>
               </div>
           </div>
@@ -143,15 +143,6 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-10 sm:mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-center sm:text-left">
           <p className="leading-relaxed">
             &copy; {year} Monopoly Marketing. All rights reserved.
-          </p>
-          <p className="leading-relaxed">
-            Playground Equipment Supplier in Chennai |{" "}
-            <a
-              href="https://www.monopolymarketing.co.in"
-              className="hover:text-white transition-colors"
-            >
-              monopolymarketing.co.in
-            </a>
           </p>
         </div>
       </div>

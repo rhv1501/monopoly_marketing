@@ -233,6 +233,7 @@ export default function WhyChooseUs() {
           <a
             href="#lead-form"
             className="underline decoration-white/30 underline-offset-2 hover:text-orange-300 hover:decoration-orange-300 transition-colors"
+            id="why-us-cta"
           >
             request a custom quote
           </a>

@@ -72,9 +72,9 @@ export default async function ThankYouPage() {
                 <p className="text-sm text-zinc-500 leading-relaxed">A playground consultant will call you within 24 hours.</p>
               </div>
               <div className="p-6 rounded-3xl bg-zinc-50/50 border border-zinc-100 transition-all hover:border-blue-200 hover:bg-white hover:shadow-lg hover:shadow-zinc-200/40 group">
-                <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">📐</div>
-                <h3 className="font-bold text-zinc-900 mb-1">Layout Design</h3>
-                <p className="text-sm text-zinc-500 leading-relaxed">We will prepare custom 2D/3D layout suggestions for you.</p>
+                <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">📄</div>
+                <h3 className="font-bold text-zinc-900 mb-1">Custom Quotation</h3>
+                <p className="text-sm text-zinc-500 leading-relaxed">We will prepare a detailed price estimate based on your specific needs.</p>
               </div>
             </div>
 
