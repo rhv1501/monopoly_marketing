@@ -3,7 +3,7 @@ import Navbar from "@/app/components/Navbar";
 import Hero from "@/app/components/Hero";
 import TrustSection from "@/app/components/TrustSection";
 import SimpleLeadForm from "@/app/components/SimpleLeadForm";
-import Products from "@/app/components/Products";
+import ProductShowcase from "@/app/components/ProductShowcase";
 import SocialProof from "@/app/components/SocialProof";
 import Reviews from "@/app/components/Reviews";
 import WhyChooseUs from "@/app/components/WhyChooseUs";
@@ -97,11 +97,11 @@ export default function HomePage() {
         {/* 3. Simple Lead Capture Form (NEW) */}
         <SimpleLeadForm />
 
-        {/* 4. Products */}
-        <Products />
-
-        {/* 5. Social Proof Strip */}
+        {/* 4. Social Proof Strip */}
         <SocialProof />
+
+        {/* 5. Product Catalog */}
+        <ProductShowcase />
 
         {/* 6. Customer Reviews */}
         <Reviews />
