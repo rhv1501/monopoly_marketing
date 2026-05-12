@@ -47,10 +47,19 @@ export default function TrustSection() {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-transparent to-transparent opacity-90" />
-            <div className="absolute bottom-4 left-4 right-4">
-              <p className="text-white font-bold text-lg">Outdoor Playgrounds</p>
-              <p className="text-blue-200 text-sm">Schools & Parks</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-90" />
+            <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
+              <div>
+                <p className="text-white font-bold text-lg">Outdoor Playgrounds</p>
+                <p className="text-blue-200 text-sm">Schools & Parks</p>
+              </div>
+              <a
+                href="#lead-form"
+                className="bg-white text-blue-950 text-xs font-bold px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition-all shadow-sm"
+                id="trust-card-quote-1"
+              >
+                Get Quote
+              </a>
             </div>
           </div>
 
@@ -62,10 +71,19 @@ export default function TrustSection() {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-transparent to-transparent opacity-90" />
-            <div className="absolute bottom-4 left-4 right-4">
-              <p className="text-white font-bold text-lg">Soft Play Zones</p>
-              <p className="text-blue-200 text-sm">Commercial & Daycare</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-90" />
+            <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
+              <div>
+                <p className="text-white font-bold text-lg">Soft Play Zones</p>
+                <p className="text-blue-200 text-sm">Commercial & Daycare</p>
+              </div>
+              <a
+                href="#lead-form"
+                className="bg-white text-blue-950 text-xs font-bold px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition-all shadow-sm"
+                id="trust-card-quote-2"
+              >
+                Get Quote
+              </a>
             </div>
           </div>
 
@@ -77,10 +95,19 @@ export default function TrustSection() {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-transparent to-transparent opacity-90" />
-            <div className="absolute bottom-4 left-4 right-4">
-              <p className="text-white font-bold text-lg">Community Parks</p>
-              <p className="text-blue-200 text-sm">Apartments & Villas</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-90" />
+            <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
+              <div>
+                <p className="text-white font-bold text-lg">Community Parks</p>
+                <p className="text-blue-200 text-sm">Apartments & Villas</p>
+              </div>
+              <a
+                href="#lead-form"
+                className="bg-white text-blue-950 text-xs font-bold px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition-all shadow-sm"
+                id="trust-card-quote-3"
+              >
+                Get Quote
+              </a>
             </div>
           </div>
         </div>
