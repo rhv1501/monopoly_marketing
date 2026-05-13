@@ -31,8 +31,6 @@ export default function FinalCTA() {
             href="#lead-form"
             className="btn-primary text-base px-8 py-4 w-full sm:w-auto"
             id="final-quote-cta"
-            data-track-event="contact_click"
-            data-track-source="final_cta"
           >
             <svg
               className="w-5 h-5"
@@ -55,9 +53,7 @@ export default function FinalCTA() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary text-base px-8 py-4 w-full sm:w-auto"
-            id="final-whatsapp-cta contact"
-            data-track-event="whatsapp_click"
-            data-track-source="final_cta"
+            id="contact"
             style={{ borderColor: "#25D366", color: "#fff" }}
           >
             <svg

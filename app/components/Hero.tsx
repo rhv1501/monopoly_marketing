@@ -57,8 +57,6 @@ export default function Hero() {
               href="#lead-form"
               className="btn-primary text-lg px-10 py-4 w-full sm:w-auto shadow-xl shadow-orange-500/20"
               id="hero-quote-cta"
-              data-track-event="contact_click"
-              data-track-source="hero"
             >
               <svg
                 className="w-5 h-5"
@@ -81,9 +79,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg px-10 py-4 rounded-full flex items-center justify-center gap-2 transition-all w-full sm:w-auto shadow-xl shadow-green-500/20"
-              id="hero-whatsapp-cta contact"
-              data-track-event="whatsapp_click"
-              data-track-source="hero"
+              id="contact"
             >
               <svg
                 className="w-6 h-6"

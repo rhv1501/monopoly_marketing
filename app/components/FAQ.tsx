@@ -152,9 +152,7 @@ export default function FAQ() {
           <a
             href="#lead-form"
             className="btn-blue text-sm px-8 py-3 w-full sm:w-auto"
-            id="faq-contact-cta"
-            data-track-event="contact_click"
-            data-track-source="faq"
+            id="faq-form-cta"
           >
             Ask Us Directly
           </a>

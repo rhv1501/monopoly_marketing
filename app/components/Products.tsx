@@ -105,8 +105,6 @@ export default function Products() {
                   href="#lead-form"
                   className="mt-4 inline-flex items-center justify-center gap-1.5 text-sm font-semibold text-blue-700 hover:text-orange-500 transition-colors"
                   id={`enquire-${product.id}`}
-                  data-track-event="contact_click"
-                  data-track-source="products"
                 >
                   Enquire Now
                   <svg

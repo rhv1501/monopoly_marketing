@@ -53,9 +53,7 @@ export default function Navbar() {
             href="#lead-form"
             className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 text-white shadow-sm"
             aria-label="Go to contact form"
-            id="nav-contact-cta-mobile"
-            data-track-event="contact_click"
-            data-track-source="navbar"
+            id="nav-cta-mobile"
           >
             <svg
               className="w-4 h-4"
@@ -79,9 +77,7 @@ export default function Navbar() {
               href="#lead-form"
               className="btn-primary text-sm px-5 py-2.5"
               aria-label="Contact us"
-              id="nav-contact-cta"
-              data-track-event="contact_click"
-              data-track-source="navbar"
+              id="nav-cta"
             >
               Contact Us
             </a>
