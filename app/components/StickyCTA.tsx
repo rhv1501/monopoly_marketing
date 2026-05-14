@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export default function StickyCTA() {
   const [visible, setVisible] = useState(false);
   const [hideForInputFocus, setHideForInputFocus] = useState(false);
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "919876543210";
+  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "919361944553";
 
   useEffect(() => {
     const handleScroll = () => {

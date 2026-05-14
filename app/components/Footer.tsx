@@ -1,7 +1,8 @@
 export default function Footer() {
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "919876543210";
-  const email = process.env.NEXT_PUBLIC_EMAIL ?? "monopolymarketingchennai@gmail.com";
-  const phone = process.env.NEXT_PUBLIC_PHONE ?? "+91 80438 47565";
+  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "919361944553";
+  const email =
+    process.env.NEXT_PUBLIC_EMAIL ?? "monopolymarketingchennai@gmail.com";
+  const phone = process.env.NEXT_PUBLIC_PHONE ?? "+91 93619 44553";
   const year = new Date().getFullYear();
   const productLinks = [
     { href: "#outdoor-playground", label: "Outdoor Playground Equipment" },
@@ -128,15 +129,15 @@ export default function Footer() {
             </ul>
 
             {/* Service areas */}
-              <div className="mt-6">
-                <h3 className="text-white font-semibold text-sm mb-3">
-                  Service Areas
-                </h3>
-                <p className="text-xs leading-relaxed">
-                  Chennai • Coimbatore • Madurai • Trichy • Tirupati • Nellore •
-                  Kerala • Tamil Nadu • Andhra Pradesh • Karnataka
-                </p>
-              </div>
+            <div className="mt-6">
+              <h3 className="text-white font-semibold text-sm mb-3">
+                Service Areas
+              </h3>
+              <p className="text-xs leading-relaxed">
+                Chennai • Coimbatore • Madurai • Trichy • Tirupati • Nellore •
+                Kerala • Tamil Nadu • Andhra Pradesh • Karnataka
+              </p>
+            </div>
           </div>
         </div>
 

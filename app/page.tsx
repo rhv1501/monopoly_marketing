@@ -27,7 +27,7 @@ const localBusinessSchema = {
   description:
     "Leading playground equipment supplier in Chennai offering outdoor playground equipment, indoor play equipment, Montessori toys, and play furniture for schools, homes, and apartments across South India.",
   url: "https://www.monopolymarketing.co.in",
-  telephone: process.env.NEXT_PUBLIC_PHONE ?? "+919876543210",
+  telephone: process.env.NEXT_PUBLIC_PHONE ?? "+919361944553",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "monopolymarketingchennai@gmail.com",
   address: {
     "@type": "PostalAddress",
@@ -70,7 +70,8 @@ const localBusinessSchema = {
     "commercial play zone setup",
   ],
   foundingDate: "2000",
-  slogan: "Premium Play Equipment for Schools, Homes & Apartments Across South India",
+  slogan:
+    "Premium Play Equipment for Schools, Homes & Apartments Across South India",
   priceRange: "₹₹",
 };
 

@@ -1,5 +1,5 @@
 export default function FloatingCall() {
-  const phone = process.env.NEXT_PUBLIC_PHONE ?? "+918043847565";
+  const phone = process.env.NEXT_PUBLIC_PHONE ?? "+919361944553";
   const cleanPhone = phone.replace(/\s/g, "");
 
   return (
@@ -11,7 +11,7 @@ export default function FloatingCall() {
     >
       {/* Pulse effect behind the button */}
       <span className="absolute w-full h-full rounded-full bg-green-400 opacity-75 animate-ping -z-10"></span>
-      
+
       <svg
         className="w-10 h-10"
         fill="none"

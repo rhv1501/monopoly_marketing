@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Hero() {
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "919876543210";
+  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "919361944553";
 
   return (
     <section
@@ -28,7 +28,9 @@ export default function Hero() {
           {/* H1 */}
           <h1 className="animate-fade-in-up text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mb-8">
             High Quality Playground Equipment Supplier for{" "}
-            <span className="text-orange-400">Schools, Commercial Zones, and Gated Communities</span>
+            <span className="text-orange-400">
+              Schools, Commercial Zones, and Gated Communities
+            </span>
           </h1>
 
           {/* Trust signal badges as bullets */}
