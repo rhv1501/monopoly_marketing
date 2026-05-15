@@ -18,7 +18,7 @@ export default function SocialProof() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
           {/* Label - Static positioning */}
-          <p className="text-blue-200 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap flex-shrink-0 opacity-80 lg:border-r lg:border-white/10 lg:pr-12">
+          <p className="text-blue-200 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap shrink-0 opacity-80 lg:border-r lg:border-white/10 lg:pr-12">
             Trusted Across South India by:
           </p>
 

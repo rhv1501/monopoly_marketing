@@ -7,24 +7,39 @@ export default function TrustSection() {
       aria-label="Trust and reliability"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
           <div className="text-center">
-            <p className="text-3xl sm:text-4xl font-black text-blue-950 mb-1">25+</p>
-            <p className="text-sm sm:text-base text-gray-600 font-medium">Years in Business</p>
+            <p className="text-3xl sm:text-4xl font-black text-blue-950 mb-1">
+              25+
+            </p>
+            <p className="text-sm sm:text-base text-gray-600 font-medium">
+              Years in Business
+            </p>
           </div>
           <div className="text-center">
-            <p className="text-3xl sm:text-4xl font-black text-blue-950 mb-1">500+</p>
-            <p className="text-sm sm:text-base text-gray-600 font-medium">Installations</p>
+            <p className="text-3xl sm:text-4xl font-black text-blue-950 mb-1">
+              500+
+            </p>
+            <p className="text-sm sm:text-base text-gray-600 font-medium">
+              Installations
+            </p>
           </div>
           <div className="text-center">
-            <p className="text-3xl sm:text-4xl font-black text-blue-950 mb-1">250+</p>
-            <p className="text-sm sm:text-base text-gray-600 font-medium">Schools & Apartments</p>
+            <p className="text-3xl sm:text-4xl font-black text-blue-950 mb-1">
+              250+
+            </p>
+            <p className="text-sm sm:text-base text-gray-600 font-medium">
+              Schools & Apartments
+            </p>
           </div>
           <div className="text-center">
-            <p className="text-3xl sm:text-4xl font-black text-blue-950 mb-1">100%</p>
-            <p className="text-sm sm:text-base text-gray-600 font-medium">Quality Assured</p>
+            <p className="text-3xl sm:text-4xl font-black text-blue-950 mb-1">
+              100%
+            </p>
+            <p className="text-sm sm:text-base text-gray-600 font-medium">
+              Quality Assured
+            </p>
           </div>
         </div>
 
@@ -34,7 +49,8 @@ export default function TrustSection() {
             Trusted by South India&apos;s Leading Properties
           </h2>
           <p className="text-gray-500 mt-2 max-w-2xl mx-auto">
-            We deliver premium, safe, and engaging play environments for every requirement.
+            We deliver premium, safe, and engaging play environments for every
+            requirement.
           </p>
         </div>
 
@@ -47,10 +63,12 @@ export default function TrustSection() {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-90" />
+            <div className="absolute inset-0 bg-linear-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-90" />
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
               <div>
-                <p className="text-white font-bold text-lg">Outdoor Playgrounds</p>
+                <p className="text-white font-bold text-lg">
+                  Outdoor Playgrounds
+                </p>
                 <p className="text-blue-200 text-sm">Schools & Parks</p>
               </div>
               <a
@@ -71,7 +89,7 @@ export default function TrustSection() {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-90" />
+            <div className="absolute inset-0 bg-linear-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-90" />
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
               <div>
                 <p className="text-white font-bold text-lg">Soft Play Zones</p>
@@ -95,7 +113,7 @@ export default function TrustSection() {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-90" />
+            <div className="absolute inset-0 bg-linear-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-90" />
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
               <div>
                 <p className="text-white font-bold text-lg">Community Parks</p>
@@ -111,7 +129,6 @@ export default function TrustSection() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

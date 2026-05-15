@@ -26,7 +26,7 @@ export default async function ThankYouPage() {
   const phone = process.env.NEXT_PUBLIC_PHONE ?? "+919361944553";
 
   return (
-    <main className="min-h-[100dvh] bg-zinc-50 flex flex-col items-center justify-center px-4 py-12 overflow-hidden selection:bg-blue-100 selection:text-blue-900">
+    <main className="min-h-dvh bg-zinc-50 flex flex-col items-center justify-center px-4 py-12 overflow-hidden selection:bg-blue-100 selection:text-blue-900">
       <ThankYouCleanup leadToken={leadToken} />
       {/* Decorative Background Elements */}
       <div className="fixed inset-0 z-0 pointer-events-none">

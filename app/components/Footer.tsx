@@ -4,13 +4,13 @@ export default function Footer() {
     process.env.NEXT_PUBLIC_EMAIL ?? "monopolymarketingchennai@gmail.com";
   const phone = process.env.NEXT_PUBLIC_PHONE ?? "+91 93619 44553";
   const year = new Date().getFullYear();
-  const productLinks = [
-    { href: "#outdoor-playground", label: "Outdoor Playground Equipment" },
-    { href: "#indoor-play", label: "Indoor Play Equipment" },
-    { href: "#montessori-toys", label: "Montessori Toys & Materials" },
-    { href: "#school-furniture", label: "Kids & Play Furniture" },
-    { href: "#indoor-play", label: "Soft Play Equipment" },
-    { href: "#products", label: "Kids Play Area Setup" },
+  const productItems = [
+    "Outdoor Playground Equipment",
+    "Indoor Play Equipment",
+    "Montessori Toys & Materials",
+    "Kids & Play Furniture",
+    "Soft Play Equipment",
+    "Kids Play Area Setup",
   ];
 
   const quickLinks = [
@@ -18,14 +18,6 @@ export default function Footer() {
     { href: "#reviews", label: "Customer Reviews" },
     { href: "#faq", label: "FAQ" },
     { href: "#lead-form", label: "Get Free Quote" },
-    {
-      href: "#montessori-toys",
-      label: "Montessori Materials Supplier in Chennai",
-    },
-    {
-      href: "#school-furniture",
-      label: "Kids Furniture in Tamil Nadu",
-    },
     { href: `https://wa.me/${whatsapp}`, label: "WhatsApp Us" },
   ];
 
@@ -87,17 +79,18 @@ export default function Footer() {
               Our Products
             </h3>
             <ul className="space-y-2 text-sm">
-              {productLinks.map((item) => (
-                <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </a>
+              {productItems.map((item) => (
+                <li key={item} className="text-gray-400">
+                  {item}
                 </li>
               ))}
             </ul>
+            <a
+              href="#products"
+              className="mt-4 inline-flex text-sm font-semibold text-blue-300 hover:text-white transition-colors"
+            >
+              View Full Catalog
+            </a>
           </div>
 
           {/* Quick Links */}
@@ -135,7 +128,8 @@ export default function Footer() {
               </h3>
               <p className="text-xs leading-relaxed">
                 Chennai • Coimbatore • Madurai • Trichy • Tirupati • Nellore •
-                Kerala • Tamil Nadu • Andhra Pradesh • Karnataka
+                Chittoor • Ongole • Puducherry/Pondicherry • Srikalahasti •
+                Kadapa • Tamil Nadu • Karnataka
               </p>
             </div>
           </div>

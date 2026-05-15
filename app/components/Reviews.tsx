@@ -161,13 +161,13 @@ function ReviewCard({ review }: { review: LocalReview }) {
   const tag = getReviewTag(review);
 
   return (
-    <article className="relative flex-none w-[290px] sm:w-[320px] rounded-2xl border border-blue-100 bg-white/95 p-4 sm:p-5 shadow-[0_10px_35px_-20px_rgba(37,99,235,0.5)]">
+    <article className="relative flex-none w-72.5 sm:w-[320px] rounded-2xl border border-blue-100 bg-white/95 p-4 sm:p-5 shadow-[0_10px_35px_-20px_rgba(37,99,235,0.5)]">
       <div className="absolute right-4 top-3 text-4xl font-black leading-none text-blue-100">
         &ldquo;
       </div>
 
       <div className="flex items-center gap-3 mb-3">
-        <div className="relative w-10 h-10 rounded-full bg-blue-600 flex-shrink-0 ring-2 ring-blue-100">
+        <div className="relative w-10 h-10 rounded-full bg-blue-600 shrink-0 ring-2 ring-blue-100">
           <div className="w-full h-full flex items-center justify-center text-white font-bold text-base">
             {review.authorName.charAt(0).toUpperCase()}
           </div>
@@ -223,7 +223,7 @@ export default function Reviews() {
   return (
     <section
       id="reviews"
-      className="relative py-16 sm:py-20 bg-gradient-to-b from-blue-50 via-sky-50 to-white overflow-hidden"
+      className="relative py-16 sm:py-20 bg-linear-to-b from-blue-50 via-sky-50 to-white overflow-hidden"
       aria-labelledby="reviews-heading"
     >
       <div className="pointer-events-none absolute -top-16 -left-10 h-40 w-40 rounded-full bg-blue-200/40 blur-3xl" />
@@ -247,7 +247,7 @@ export default function Reviews() {
         </div>
 
         <div className="grid gap-5 sm:gap-6 items-start md:grid-cols-12 min-w-0">
-          <article className="w-full min-w-0 md:col-span-5 xl:col-span-4 rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-700 to-blue-600 text-white p-5 sm:p-6 shadow-[0_24px_60px_-36px_rgba(30,64,175,0.85)]">
+          <article className="w-full min-w-0 md:col-span-5 xl:col-span-4 rounded-3xl border border-blue-200 bg-linear-to-br from-blue-700 to-blue-600 text-white p-5 sm:p-6 shadow-[0_24px_60px_-36px_rgba(30,64,175,0.85)]">
             <p className="text-xs uppercase tracking-[0.2em] text-blue-100/90 font-semibold mb-3">
               Featured Experience
             </p>
