@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import FloatingCall from "./components/FloatingCall";
+import FloatingFormButton from "./components/FloatingFormButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -181,7 +181,7 @@ export default function RootLayout({
           </noscript>
         )}
         {children}
-        <FloatingCall />
+        <FloatingFormButton />
       </body>
     </html>
   );
